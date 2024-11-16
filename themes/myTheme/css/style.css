@@ -17,22 +17,26 @@ html, body {
     height: 100%;
 }
 
+html{
+    font-size: 62.5%;
+}
+
 /* Placement */
 
 body {
     display: flex;
     flex-direction: column;
-    background-color: whitesmoke
+    background-color: whitesmoke;
+    padding: 1rem
 }
 
 .main {
     flex: 1 0 auto;
+    
 }
 
 .header, .footer {
     flex: 0 0 auto;
-    
-
 }
 
 /* Header */
@@ -40,17 +44,12 @@ body {
 .header, .site-header {
     display: flex;
     justify-content: space-between;
-    
-    
 }
 
 /* Title */
 
-.logo {
-    
-    
-
-    
+.title, .logo {
+    padding: 3em 3em 3em 0;
 }
 
 @media (max-width: 767px) {
@@ -66,7 +65,7 @@ body {
 }
 
 .title * {
-    color: #444;
+    color: #111;
 }
 
 .title p {
@@ -79,12 +78,11 @@ body {
     display: flex;
     justify-content: space-between;
     border-top: 1px solid #222;
-    
 }
 
 .footer a {
     color: #222;
-}
+}s
 
 .footer .social {
     font-size: 2rem;
@@ -94,16 +92,20 @@ body {
 
 body {
     font-family: sans-serif;
-    line-height: 1.5rem;
+    font-size: 1.6rem;
+    color: #444444b2;
 }
 
 p, td, th, li, dd {
+    font-weight: 600;
+    font-size: 1.6rem;
     text-align: justify;
     overflow-wrap: break-word;
     word-wrap: break-word;
 }
 
 h1, h2, h3, h4, h5, h6 {
+    color: #222;
     margin-bottom: 0.6em;
     font-weight: bold;
 }
@@ -151,8 +153,4 @@ blockquote {
     margin-left: 1em;
     padding-left: 1em;
     border-left: 0.5em solid #f5f5f5;
-}
-
-a:hover{
-    background-color: darkcyan;
 }
