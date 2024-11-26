@@ -1,0 +1,28 @@
+@use 'variables';
+
+.header{
+    display: flex;
+    //flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+
+    background-color: variables.$bg-color-header;
+
+
+    .nav {
+        a{
+
+        font-size: 2rem;
+        }
+        }
+    
+        .site-header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+}
+
