@@ -1,21 +1,29 @@
-.footer{
+@use 'variables';
 
-    display: flex;
-    justify-content: space-between;
+.footer {
 
-    align-items: center;
-    padding: 2rem;
+  display: flex;
+  justify-content: space-between;
 
-    background-color: rgba(122, 114, 114, 0.582);
+  align-items: center;
+  padding: 2rem;
 
-    color: white;
+  background-color: variables.$bg-color-footer;
 
-    .social{ 
-        a{
-        text-decoration: none;
-        font-size: 3rem;
-        color: whitesmoke;
-    }
-    }
+  color: variables.$secondary-text;
+
+  
+}
+
+.social a { 
+    
+  text-decoration: none;
+  font-size: 3rem;
+  color: variables.$secondary-text;
+
+}
+
+.footer .other a {
+  color: variables.$secondary-text;
 }
 

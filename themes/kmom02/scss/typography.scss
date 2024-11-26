@@ -1,27 +1,27 @@
 @use 'variables';
 
-html{
+html {
 
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
-body{
-    font-size: 1.6rem;
+body {
+  font-size: 1.6rem;
     
-    font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
-p{
+p {
 
     
-    line-height: 1.4;
-    margin-bottom: 1.96rem;
-    color: #333;
+  line-height: 1.4;
+  margin-bottom: 1.96rem;
+  color: variables.$primary-text;
     
 
 }
 
-span{
+span {
 
-    font-weight: bold;
+  font-weight: bold;
 }

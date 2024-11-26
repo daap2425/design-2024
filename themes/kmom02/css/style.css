@@ -6441,7 +6441,8 @@ span {
   font-weight: bold;
 }
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -6452,14 +6453,15 @@ body {
   background-color: #f7f7f7;
 }
 
-.header, .footer {
+.header,
+.footer {
   flex: 0 0 auto;
 }
 
 .main {
   max-width: 64rem;
   padding: 2rem;
-  background-color: white;
+  background-color: #fff;
   margin: 0 auto;
   flex: 1 0 auto;
 }
@@ -6471,9 +6473,6 @@ body {
   padding: 2rem;
   background-color: rgba(223, 220, 233, 0.3764705882);
 }
-.header .nav a {
-  font-size: 2rem;
-}
 .header .site-header {
   display: flex;
   flex-direction: row;
@@ -6481,18 +6480,31 @@ body {
   align-items: center;
 }
 
+.nav a {
+  font-size: 2rem;
+}
+
+.title {
+  padding: 0.5rem;
+}
+
 .footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 2rem;
-  background-color: rgba(122, 114, 114, 0.582);
-  color: white;
+  background-color: #333;
+  color: #fff;
 }
-.footer .social a {
+
+.social a {
   text-decoration: none;
   font-size: 3rem;
-  color: whitesmoke;
+  color: #fff;
+}
+
+.footer .other a {
+  color: #fff;
 }
 
 blockquote {
