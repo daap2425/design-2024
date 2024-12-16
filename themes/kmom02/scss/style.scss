@@ -7,9 +7,11 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 @import '../../shared/fontawesome/scss/regular';
 @import '../../node_modules/normalize.css/normalize';
 
+@import 'technology';
 @import 'variables';
 
 @import 'typography';
+
 
 
 @import 'container';
@@ -18,5 +20,6 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 
 @import 'blockquotes';
 @import 'code';
+
 
 

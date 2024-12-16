@@ -1,0 +1,87 @@
+.landingpage {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.96rem;
+  width: 100%; 
+}
+  
+.landingpage h1 {
+  grid-column: span 1;    
+}
+  
+.box { 
+  border: 1px solid #ccc;
+  padding: 1.96rem;
+  background-color: rgba(253, 253, 246, 0.815);
+}
+  
+.box h1 {
+  border-bottom: 1px solid #ccc;
+}
+  
+.box:hover {
+  box-shadow: 10px 10px 5px 1px rgba(0, 0, 0, 0.2);
+}
+  
+.technology .article {
+  box-sizing: border-box;
+  padding: 1.96rem;    
+}
+  
+.technology .menu {
+  padding: 1.96rem;
+  background-color: rgb(229, 239, 248);
+  box-sizing: border-box;
+}
+  
+@media (min-width: 768px) {
+  .technology {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+  
+  .technology .menu {   
+    border-right: 1px solid #ccc;     
+  }
+  
+  .landingpage {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.96rem;
+    width: 100%;
+  }
+  
+  .landingpage h1 {
+    grid-column: span 3;
+  }
+  
+  .css {
+    grid-column: span 1;
+  }
+  
+  .html {
+    grid-column: span 2;
+  }
+  
+  .js {
+    grid-column: span 2;
+  }
+  
+  .php {
+    grid-column: span 1;
+  }
+  
+  .python {
+    grid-column: span 3;
+  }
+  
+  .git {
+    grid-column: span 1;
+    grid-row: span 2;
+  }
+  
+  .sqlite {
+    grid-column: span 2;
+  }
+}

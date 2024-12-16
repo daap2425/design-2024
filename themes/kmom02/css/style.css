@@ -6422,6 +6422,83 @@ template {
   display: none;
 }
 
+.landingpage {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.96rem;
+  width: 100%;
+}
+
+.landingpage h1 {
+  grid-column: span 1;
+}
+
+.box {
+  border: 1px solid #ccc;
+  padding: 1.96rem;
+  background-color: rgba(253, 253, 246, 0.815);
+}
+
+.box h1 {
+  border-bottom: 1px solid #ccc;
+}
+
+.box:hover {
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.technology .article {
+  box-sizing: border-box;
+  padding: 1.96rem;
+}
+
+.technology .menu {
+  padding: 1.96rem;
+  background-color: aliceblue;
+  box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+  .technology {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+  .technology .menu {
+    border-right: 1px solid #ccc;
+  }
+  .landingpage {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.96rem;
+    width: 100%;
+  }
+  .landingpage h1 {
+    grid-column: span 3;
+  }
+  .css {
+    grid-column: span 1;
+  }
+  .html {
+    grid-column: span 2;
+  }
+  .js {
+    grid-column: span 2;
+  }
+  .php {
+    grid-column: span 1;
+  }
+  .python {
+    grid-column: span 3;
+  }
+  .git {
+    grid-column: span 1;
+    grid-row: span 2;
+  }
+  .sqlite {
+    grid-column: span 2;
+  }
+}
 html {
   font-size: 62.5%;
 }
@@ -6453,23 +6530,24 @@ body {
   background-color: #f7f7f7;
 }
 
-.header,
-.footer {
-  flex: 0 0 auto;
+.hidden {
+  display: none !important;
 }
 
 .main {
-  max-width: 64rem;
-  padding: 2rem;
+  max-width: 1200px;
+  margin-top: 1.96rem;
+  margin-bottom: 1.96rem;
+  padding: 1rem;
   background-color: #fff;
-  margin: 0 auto;
-  flex: 1 0 auto;
+  height: 100vh;
 }
 
 .header {
+  grid-column: first/end;
+  grid-row: row1-start/row2-start;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding: 2rem;
   background-color: rgba(223, 220, 233, 0.3764705882);
 }
@@ -6489,9 +6567,11 @@ body {
 }
 
 .footer {
+  grid-column: first/end;
+  grid-row: row3-start/row-end;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: end;
   padding: 2rem;
   background-color: #333;
   color: #fff;
@@ -6512,4 +6592,32 @@ blockquote {
   margin-left: 1em;
   padding-left: 1em;
   border-left: 0.5em solid #f5f5f5;
+}
+
+code {
+  margin: 0 0.1em;
+  padding: 0.1em 0.2em;
+  border: 1px solid #ccc;
+  border-radius: 0.3em;
+  background: #f5f5f5;
+  font-family: monospace;
+  font-size: 0.85rem;
+  line-height: 1.9824;
+}
+
+pre {
+  padding: 0 1em;
+  border: 1px solid #ccc;
+  border-radius: 0.3em;
+  background: #f5f5f5;
+}
+
+pre code {
+  display: block;
+  margin: 0;
+  padding: 1.1111em 0;
+  border: 0 none;
+  background: transparent;
+  overflow-x: auto;
+  line-height: 1.4;
 }

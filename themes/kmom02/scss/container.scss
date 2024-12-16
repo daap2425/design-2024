@@ -6,8 +6,12 @@ body {
 }
 
 body {
+  //display: grid;
+  //grid-template-columns: [first] 20% [second] auto [third] 20%  [end];
+  //grid-template-rows: [row1-start] auto [row2-start] auto [row3-start] auto [row-end];
   display: flex;
   flex-direction: column;
+  
   padding: 0.5rem;
   background-color: variables.$bg-color-body;
     
@@ -16,23 +20,27 @@ body {
 }
 
 
-.header,
-.footer {
-  flex: 0 0 auto;
-    
-
+.hidden {
+  display: none !important;
 }
 
 .main {
-
-    
-  max-width: 64rem;
-  padding: 2rem;
+  //grid-column: first / end;
+  //grid-row: row2-start / row3-start;
+  
+  max-width: 1200px;
+  margin-top: 1.96rem;
+  margin-bottom: 1.96rem;
+  
+  padding: 1rem;
   background-color: variables.$bg-color-main;
+  
+  height: 100vh;
+ 
     
-  margin: 0 auto;
+ 
 
-  flex: 1 0 auto;
+  
 
 
 }
