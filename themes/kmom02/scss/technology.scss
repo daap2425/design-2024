@@ -2,7 +2,17 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 1.96rem;
-  width: 100%; 
+  width: 100%;
+ 
+
+}
+
+.bg-h1 {
+  background-color: $bg-color-top;
+  color: $secondary-text;
+  margin-top: 0;
+  margin-bottom: 1.96rem;
+  padding: 1.96rem;
 }
   
 .landingpage h1 {
@@ -12,7 +22,7 @@
 .box { 
   border: 1px solid #ccc;
   padding: 1.96rem;
-  background-color: rgba(253, 253, 246, 0.815);
+  background-color: $bg-box;
 }
   
 .box h1 {
@@ -20,7 +30,7 @@
 }
   
 .box:hover {
-  box-shadow: 10px 10px 5px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 10px 10px 5px 1px $shadow-box;
 }
   
 .technology .article {
@@ -42,14 +52,17 @@
   }
   
   .technology .menu {   
-    border-right: 1px solid #ccc;     
+    border-right: 1px solid #ccc;
+    background-color: $bg-color-aside;     
   }
   
   .landingpage {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.96rem;
-    width: 100%;
+    width: 70%;
+    margin: 0 auto;
+    
   }
   
   .landingpage h1 {

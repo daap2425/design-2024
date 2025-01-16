@@ -1,4 +1,4 @@
-@use 'variables';
+//@use 'variables';
 
 html {
 
@@ -7,7 +7,7 @@ html {
 
 body {
   font-size: 1.6rem;
-    
+  color: $primary-text;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -16,12 +16,14 @@ p {
     
   line-height: 1.4;
   margin-bottom: 1.96rem;
-  color: variables.$primary-text;
+  color: $primary-text;
     
 
 }
+
 
 span {
 
   font-weight: bold;
 }
+

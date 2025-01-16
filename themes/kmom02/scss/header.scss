@@ -1,4 +1,4 @@
-@use 'variables';
+//@use 'variables';
 
 .header {
   grid-column: first / end;
@@ -8,8 +8,11 @@
   justify-content: space-between;
   
   padding: 2rem;
+  margin-bottom: 1.96rem;
 
-  background-color: variables.$bg-color-header;
+  background-color: $bg-color-header;
+  color: $primary-text;
+  border-bottom: 1px solid $border-color;
 
 
   
@@ -23,11 +26,15 @@
 
 }
 
+.title a {
+  color: $primary-text;
+}
+
 .nav a {
      
 
   font-size: 2rem;
-      
+  color: $primary-text;
     
 }
 
@@ -36,3 +43,5 @@
 .title {
   padding: 0.5rem;
 }
+
+

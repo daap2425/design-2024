@@ -1,19 +1,24 @@
-@use 'variables';
+//@use 'variables';
 
-html,
-body {
+html {
+
   height: 100%;
 }
+
 
 body {
   //display: grid;
   //grid-template-columns: [first] 20% [second] auto [third] 20%  [end];
   //grid-template-rows: [row1-start] auto [row2-start] auto [row3-start] auto [row-end];
+  
+
   display: flex;
   flex-direction: column;
-  
   padding: 0.5rem;
-  background-color: variables.$bg-color-body;
+  background-color: $bg-color-body;
+  min-height: 100%;
+
+ 
     
 
 
@@ -28,20 +33,39 @@ body {
   //grid-column: first / end;
   //grid-row: row2-start / row3-start;
   
-  max-width: 1200px;
+  
   margin-top: 1.96rem;
-  margin-bottom: 1.96rem;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  max-width: 64rem;
+ 
+
   
   padding: 1rem;
-  background-color: variables.$bg-color-main;
+  background-color: $bg-color-main;
   
-  height: 100vh;
+  
  
+  h1 {
+    background-color: $bg-color-top;
+    margin-top: 0;
+    margin-bottom: 1.96rem;
+    color: $secondary-text;
+    padding: 1.96rem;
     
+  }
  
 
   
 
 
 }
+
+.landingpage {
+  background-color: $bg-landingpage;
+  color: $primary-text;
+  padding: 1rem;
+}
+
 

@@ -1,17 +1,19 @@
 @use 'variables';
 
 .footer {
-  grid-column: first / end;
-  grid-row: row3-start / row-end;
+  //grid-column: first / end;
+  //grid-row: row3-start / row-end;
   display: flex;
   justify-content: space-between;
 
   align-items: end;
   padding: 2rem;
+ 
 
   background-color: variables.$bg-color-footer;
 
   color: variables.$secondary-text;
+  margin-top: auto;
 
   
 }
