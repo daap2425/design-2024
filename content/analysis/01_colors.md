@@ -10,7 +10,8 @@ För denna undersökning har jag valt att analysera tre webbplatser: Aftonbladet
 
 ## Metod
 
-Denna studie bygger på en kvalitativ analysmetod för att undersöka färger och typografi. För att analysera färger använde jag ColorZilla för att extrahera färgkoder och utvecklarverktygen i webbläsaren för att undersöka typografi på specifika områden. Färgkoder i hex-format dokumenterades och jämfördes mellan de aktuella webbplatserna med hjälp ab "Adobe Color"
+För att analysera färger och typografi på webbplatser använde jag ColorZilla för att extrahera färgkoder i hex-format från olika delar av webbplatsen. För att undersöka typografin använde jag webbläsarens utvecklarverktyg för att analysera typsnitt. Färgkoderna dokumenterades och jämfördes mellan de aktuella webbplatserna, medan typografin granskades för att bedöma läsbarhet.
+Denna metod gav en grundlig förståelse för webbplatsens design genom att fokusera på både färger och typografi.
 
 För att tolka färgernas inverkan på användarupplevelsen och analysera typografi använde jag teorier från "The Principles of Beautiful Web Design, 4th Edition  (Beaird & George, 2020)".
 

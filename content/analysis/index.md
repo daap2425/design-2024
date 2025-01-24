@@ -6,7 +6,7 @@ reports:
   - name: Color
     class: 01_colors
   - name: Loadtimes
-    class: load
+    class: 02_load
   - name: Design
     class: design
 ---

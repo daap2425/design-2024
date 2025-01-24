@@ -1,0 +1,47 @@
+.loadtime {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+
+  th,
+  td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+
+  th {
+    background-color: #f4f4f4;
+  }
+}
+
+.pic {
+  margin: 0 auto;
+}
+
+.borderbottom {
+  border-bottom: 2px solid #800080;  // Changed purple to hex color code
+  margin-bottom: 1.96rem;
+}
+
+.red {
+  display: block;
+  color: #f00;  // Changed red to hex color code
+  background-color: #000;  // Changed black to hex color code
+  padding: 1rem;
+}
+
+.yellow {
+  display: block;
+  color: #9acd32;  // Changed yellowgreen to hex color code
+  background-color: #000;  // Changed black to hex color code
+  padding: 1rem;
+}
+
+.green {
+  display: block;
+  color: #008000;  // Changed green to hex color code
+  background-color: #000;  // Changed black to hex color code
+  padding: 1rem;
+}
+

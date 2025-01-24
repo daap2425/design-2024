@@ -1,0 +1,91 @@
+{% include 'incl/header.twig' %}
+
+<body>
+   
+    {% include 'incl/nav.twig' %}
+        
+        
+        <article class="gallery" role="main">
+        {{ content }}
+        
+        <h1 class ="bg-h1">Mitt Galleri</h1>
+  
+        
+        <div class="gallery-item">
+        <a href="{{ base_url }}/image/tellus.jpg" alt="Earth from space">
+            <picture>
+                <source media="(min-width: 668px)" srcset="{{ base_url }}/image/tellus.jpg?w=960&h=960&crop-to-fit&q=90">
+                <source media="(min-width: 468px)" srcset="{{ base_url }}/image/tellus.jpg?w=667&h=667&crop-to-fit&q=70">
+                <img src="{{ base_url }}/image/tellus.jpg?w=375&h=375&crop-to-fit&q=60" alt="earth from space">
+            </picture>
+        </a>
+       
+    </div>
+
+    <div class="gallery-item">
+        <a href="{{ base_url }}/image/sunset.jpg" alt="Sunset">
+            <picture>
+                <source media="(min-width: 668px)" srcset="{{ base_url }}/image/sunset.jpg?w=960&h=960&crop-to-fit&q=90">
+                <source media="(min-width: 468px)" srcset="{{ base_url }}/image/sunset.jpg?w=667&h=667&crop-to-fit&q=70">
+                <img src="{{ base_url }}/image/sunset.jpg?w=375&h=375&crop-to-fit&q=60" alt="sunset">
+            </picture>
+        </a>
+        
+    </div>
+    <div class="gallery-item">
+        <a href="{{ base_url }}/image/owl.jpg" alt="owl thinking" >
+            <picture>
+                <source media="(min-width: 668px)" srcset="{{ base_url }}/image/owl.jpg?w=960&h=960&crop-to-fit&q=90">
+                <source media="(min-width: 468px)" srcset="{{ base_url }}/image/owl.jpg?w=667&h=667&crop-to-fit&q=70">
+                <img src="{{ base_url }}/image/owl.jpg?w=375&h=375&crop-to-fit&q=60" alt="owl">
+            </picture>
+        </a>
+        
+    </div>
+    <div class="gallery-item">
+        <a href="{{ base_url }}/image/squirrel.jpg" alt="squirrel" >
+            <picture>
+                <source media="(min-width: 668px)" srcset="{{ base_url }}/image/squirrel.jpg?w=960&h=960&crop-to-fit&q=90">
+                <source media="(min-width: 468px)" srcset="{{ base_url }}/image/squirrel.jpg?w=667&h=667&crop-to-fit&q=70">
+                <img src="{{ base_url }}/image/squirrel.jpg?w=375&h=375&crop-to-fit&q=60" alt="squirrel">
+            </picture>
+        </a>
+        
+    </div>
+    <div class="gallery-item">
+        <a href="{{ base_url }}/image/beach.jpg" alt="beach">
+            <picture>
+                <source media="(min-width: 668px)" srcset="{{ base_url }}/image/beach.jpg?w=960&h=960&crop-to-fit&q=90">
+                <source media="(min-width: 468px)" srcset="{{ base_url }}/image/beach.jpg?w=667&h=667&crop-to-fit&q=70">
+                <img src="{{ base_url }}/image/beach.jpg?w=375&h=375&crop-to-fit&q=60" alt="sunset">
+            </picture>
+        </a>
+        
+    </div>
+    <div class="gallery-item">
+        <a href="{{ base_url }}/image/safari.jpg" alt="safari">
+            <picture>
+                <source media="(min-width: 668px)" srcset="{{ base_url }}/image/safari.jpg?w=960&h=960&crop-to-fit&q=90&area=0,20,0,0">
+                <source media="(min-width: 468px)" srcset="{{ base_url }}/image/safari.jpg?w=667&h=667&crop-to-fit&q=70">
+                <img src="{{ base_url }}/image/safari.jpg?w=375&h=375&crop-to-fit&q=60" alt="safari">
+            </picture>
+        </a>
+        
+    </div>
+       
+
+       <div class="embed-container">
+    <iframe src="https://www.youtube.com/embed/gCwjLPBqpa0" frameborder="0" allowfullscreen></iframe>
+</div>
+        
+
+       
+        </article>
+    
+       
+        
+        {% include 'incl/footer.twig' %}
+    
+</body>
+
+</html>
